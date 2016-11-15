@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root><!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+	<data name="Arcade" xml:space="preserve">
+		<value>Arcade</value>
+	</data>
+	<data name="badges_description_1" xml:space="preserve">
+		<value>Spiele den Arcade-Modus "X" mal</value>
+	</data>
+	<data name="badges_description_1_1" xml:space="preserve">
+		<value>Nächstes Ziel: 2 mal</value>
+	</data>
+	<data name="badges_description_1_2" xml:space="preserve">
+		<value>Nächstes Ziel: 10 mal</value>
+	</data>
+	<data name="badges_description_1_3" xml:space="preserve">
+		<value>Nächstes Ziel: 20 mal</value>
+	</data>
+	<data name="badges_description_2" xml:space="preserve">
+		<value>Erreiche einen Gesamtpunktestand von "x" im Story-Modus</value>
+	</data>
+	<data name="badges_description_2_1" xml:space="preserve">
+		<value>Nächstes Level: 100 Punkte</value>
+	</data>
+	<data name="badges_description_2_2" xml:space="preserve">
+		<value>Nächstes Level: 200 Punkte</value>
+	</data>
+	<data name="badges_description_2_3" xml:space="preserve">
+		<value>Nächstes Level: 300 Punkte</value>
+	</data>
+	<data name="badges_description_3" xml:space="preserve">
+		<value>Beende ein Level innerhalb von "x" Sekunden mit mindestens 70% Leistung</value>
+	</data>
+	<data name="badges_description_3_1" xml:space="preserve">
+		<value>Nächstes Level: 40 Sekunden</value>
+	</data>
+	<data name="badges_description_3_2" xml:space="preserve">
+		<value>Nächstes Level: 30 Sekunden</value>
+	</data>
+	<data name="badges_description_3_3" xml:space="preserve">
+		<value>Nächstes Level: 20 Sekunden</value>
+	</data>
+	<data name="badges_description_4" xml:space="preserve">
+		<value>Gebe hintereinander 'x'-mal die richtige Antwort </value>
+	</data>
+	<data name="badges_description_4_1" xml:space="preserve">
+		<value>Nächstes Level: 2</value>
+	</data>
+	<data name="badges_description_4_2" xml:space="preserve">
+		<value>Nächstes Level: 4</value>
+	</data>
+	<data name="badges_description_4_3" xml:space="preserve">
+		<value>Nächstes Level: 6</value>
+	</data>
+	<data name="badges_description_5" xml:space="preserve">
+		<value>Spiele das Spiel länger als "x" Minuten</value>
+	</data>
+	<data name="badges_description_5_1" xml:space="preserve">
+		<value>Nächstes Level: 10 Minuten</value>
+	</data>
+	<data name="badges_description_5_2" xml:space="preserve">
+		<value>Nächstes Level: 20 Minuten</value>
+	</data>
+	<data name="badges_description_5_3" xml:space="preserve">
+		<value>Nächstes Level: 30 Minuten</value>
+	</data>
+	<data name="badges_description_6" xml:space="preserve">
+		<value>Erziele "x" in einer Runde des Arcade-Modus</value>
+	</data>
+	<data name="badges_description_6_1" xml:space="preserve">
+		<value>Nächstes Level: 10</value>
+	</data>
+	<data name="badges_description_6_2" xml:space="preserve">
+		<value>Nächstes Level: 20</value>
+	</data>
+	<data name="badges_description_6_3" xml:space="preserve">
+		<value>Nächstes Level: 30</value>
+	</data>
+	<data name="badges_description_7" xml:space="preserve">
+		<value>Erreiche eine Freischaltung von "x"% aller Artikel im Shop</value>
+	</data>
+	<data name="badges_description_7_1" xml:space="preserve">
+		<value>Nächstes level: 30%</value>
+	</data>
+	<data name="badges_description_7_2" xml:space="preserve">
+		<value>Nächstes level: 50%</value>
+	</data>
+	<data name="badges_description_7_3" xml:space="preserve">
+		<value>Nächstes level: 100%</value>
+	</data>
+	<data name="badges_description_8" xml:space="preserve">
+		<value>Beantworte alle Fragen "x" Etappen lang im Story-Modus richtig</value>
+	</data>
+	<data name="badges_description_8_1" xml:space="preserve">
+		<value>Nächstes Level: 1 Etappe</value>
+	</data>
+	<data name="badges_description_8_2" xml:space="preserve">
+		<value>Nächstes Level: 2 Etappe</value>
+	</data>
+	<data name="badges_description_8_3" xml:space="preserve">
+		<value>Nächstes Level: 3 Etappe</value>
+	</data>
+	<data name="badges_description_final" xml:space="preserve">
+		<value>Sie haben alles erledigt!</value>
+	</data>
+	<data name="badges_title" xml:space="preserve">
+		<value>Trophäen</value>
+	</data>
+	<data name="Car" xml:space="preserve">
+		<value>Fahrzeug</value>
+	</data>
+	<data name="city" xml:space="preserve">
+		<value>Stadtlandschaft</value>
+	</data>
+	<data name="close" xml:space="preserve">
+		<value>Schließen</value>
+	</data>
+	<data name="conticoins" xml:space="preserve">
+		<value> Conti Punkte!</value>
+	</data>
+	<data name="correct" xml:space="preserve">
+		<value>korrekt</value>
+	</data>
+	<data name="Coupe" xml:space="preserve">
+		<value>Coupe</value>
+	</data>
+	<data name="desert" xml:space="preserve">
+		<value>Wüstenlandschaft</value>
+	</data>
+	<data name="earnings" xml:space="preserve">
+		<value>Gewinn: </value>
+	</data>
+	<data name="Enviroment" xml:space="preserve">
+		<value>Umgebung</value>
+	</data>
+	<data name="gender" xml:space="preserve">
+		<value>Geschlecht</value>
+	</data>
+	<data name="gender_female" xml:space="preserve">
+		<value>Männlicher Avatar</value>
+	</data>
+	<data name="gender_male" xml:space="preserve">
+		<value>Männlicher Avatar</value>
+	</data>
+	<data name="go" xml:space="preserve">
+		<value>LOS!</value>
+	</data>
+	<data name="instruction" xml:space="preserve">
+		<value>Klicke auf eine der 4 Antwortmöglichkeiten unten um eine Frage zu beantworten
+
+Die Qualität deines Autos wird sich gemäß der Antwortrichtigkeit ändern.
+
+Beantworte die Frage bevor die Zeit abläuft!
+</value>
+	</data>
+	<data name="Management &amp; Support Process" xml:space="preserve">
+		<value>Management &amp; Support</value>
+	</data>
+	<data name="Message_1" xml:space="preserve">
+		<value>Willkommen zu Q.Nect!</value>
+	</data>
+	<data name="Message_2" xml:space="preserve">
+		<value>Dies sind Nachrichten vom Server!</value>
+	</data>
+	<data name="Message_3" xml:space="preserve">
+		<value>Erspiele Gold um Artikel im Shop zu kaufen.</value>
+	</data>
+	<data name="Message_4" xml:space="preserve">
+		<value>Dein aktueller Fortschritt ist:</value>
+	</data>
+	<data name="People &amp; Organization" xml:space="preserve">
+		<value>Menschen &amp; Organisation</value>
+	</data>
+	<data name="PlayGame" xml:space="preserve">
+		<value>Spielen</value>
+	</data>
+	<data name="Product &amp; Production Process Development" xml:space="preserve">
+		<value>Produkt- &amp; Produktionsprozessentwicklung</value>
+	</data>
+	<data name="Production &amp; Delivery" xml:space="preserve">
+		<value>Produktion &amp; Lieferung</value>
+	</data>
+	<data name="prop" xml:space="preserve">
+		<value>Requisiten</value>
+	</data>
+	<data name="Prop(city)" xml:space="preserve">
+		<value>Stadtgegenstände</value>
+	</data>
+	<data name="Prop(desert)" xml:space="preserve">
+		<value>Wüstengegenstände</value>
+	</data>
+	<data name="Prop(winter)" xml:space="preserve">
+		<value>Wintergegenstände</value>
+	</data>
+	<data name="prop_agave" xml:space="preserve">
+		<value>Agave</value>
+	</data>
+	<data name="prop_bench" xml:space="preserve">
+		<value>Bank</value>
+	</data>
+	<data name="prop_bicycle" xml:space="preserve">
+		<value>Fahrrad</value>
+	</data>
+	<data name="prop_billboard" xml:space="preserve">
+		<value>Reklametafel</value>
+	</data>
+	<data name="prop_bud" xml:space="preserve">
+		<value>Knospe</value>
+	</data>
+	<data name="prop_busstop" xml:space="preserve">
+		<value>Bushaltestelle</value>
+	</data>
+	<data name="prop_cactus" xml:space="preserve">
+		<value>Kaktus</value>
+	</data>
+	<data name="prop_cone" xml:space="preserve">
+		<value>Kegel</value>
+	</data>
+	<data name="prop_electricitybox" xml:space="preserve">
+		<value />
+	</data>
+	<data name="prop_fence" xml:space="preserve">
+		<value>Zaun</value>
+	</data>
+	<data name="prop_firehydrant" xml:space="preserve">
+		<value>Hydrant</value>
+	</data>
+	<data name="prop_grass" xml:space="preserve">
+		<value>Gras</value>
+	</data>
+	<data name="prop_mailbox" xml:space="preserve">
+		<value>Briefkasten</value>
+	</data>
+	<data name="prop_palmtree" xml:space="preserve">
+		<value>Palme</value>
+	</data>
+	<data name="prop_pinetree" xml:space="preserve">
+		<value>Kiefer</value>
+	</data>
+	<data name="prop_pole" xml:space="preserve">
+		<value>Pfosten</value>
+	</data>
+	<data name="prop_roadblock1" xml:space="preserve">
+		<value>Straßensperre 1</value>
+	</data>
+	<data name="prop_roadblock2" xml:space="preserve">
+		<value>Straßensperre 2</value>
+	</data>
+	<data name="prop_rock" xml:space="preserve">
+		<value>Felsen</value>
+	</data>
+	<data name="prop_sign1" xml:space="preserve">
+		<value>Schild 1</value>
+	</data>
+	<data name="prop_sign2" xml:space="preserve">
+		<value>Schild 2</value>
+	</data>
+	<data name="prop_sign3" xml:space="preserve">
+		<value>Schild 3</value>
+	</data>
+	<data name="prop_sign4" xml:space="preserve">
+		<value>Schild 4</value>
+	</data>
+	<data name="prop_snowman" xml:space="preserve">
+		<value>Schneemann</value>
+	</data>
+	<data name="prop_speedcamera" xml:space="preserve">
+		<value>Radarkamera</value>
+	</data>
+	<data name="prop_streetlamp" xml:space="preserve">
+		<value>Straßenlaterne</value>
+	</data>
+	<data name="prop_streetlamp2" xml:space="preserve">
+		<value>Straßenlaterne 2</value>
+	</data>
+	<data name="prop_streetlamp3" xml:space="preserve">
+		<value>Straßenlaterne 3</value>
+	</data>
+	<data name="prop_streetlamp4" xml:space="preserve">
+		<value>Straßenlaterne 4</value>
+	</data>
+	<data name="prop_streetsign" xml:space="preserve">
+		<value />
+	</data>
+	<data name="prop_telephonebooth" xml:space="preserve">
+		<value />
+	</data>
+	<data name="prop_trafficlight" xml:space="preserve">
+		<value>Ampel</value>
+	</data>
+	<data name="prop_trafficlight2" xml:space="preserve">
+		<value>Ampel 2</value>
+	</data>
+	<data name="prop_trashbin" xml:space="preserve">
+		<value>Mülleimer</value>
+	</data>
+	<data name="prop_tree" xml:space="preserve">
+		<value>Baum</value>
+	</data>
+	<data name="prop_tumbleweed" xml:space="preserve">
+		<value>Unkraut</value>
+	</data>
+	<data name="prop_utilitypole" xml:space="preserve">
+		<value>Strommast</value>
+	</data>
+	<data name="prop_utilitypole_lamp" xml:space="preserve">
+		<value>Strommast</value>
+	</data>
+	<data name="prop_yucca" xml:space="preserve">
+		<value>Yucca</value>
+	</data>
+	<data name="results" xml:space="preserve">
+		<value>Ergebnisse</value>
+	</data>
+	<data name="score" xml:space="preserve">
+		<value>Punktestand: </value>
+	</data>
+	<data name="Sedan" xml:space="preserve">
+		<value>Sedan</value>
+	</data>
+	<data name="select" xml:space="preserve">
+		<value>Auswahl</value>
+	</data>
+	<data name="sentence_1" xml:space="preserve">
+		<value>Streng dich beim nächsten mal noch mehr an!</value>
+	</data>
+	<data name="sentence_2" xml:space="preserve">
+		<value>Du bist auf dem richtigen Weg!</value>
+	</data>
+	<data name="sentence_3" xml:space="preserve">
+		<value>Du warst großartig!</value>
+	</data>
+	<data name="settings_credit" xml:space="preserve">
+		<value>Danksagung</value>
+	</data>
+	<data name="settings_default_settings" xml:space="preserve">
+		<value>Standardeinstellungen</value>
+	</data>
+	<data name="settings_english" xml:space="preserve">
+		<value>Englisch</value>
+	</data>
+	<data name="settings_german" xml:space="preserve">
+		<value>Deutsche</value>
+	</data>
+	<data name="settings_music" xml:space="preserve">
+		<value>Musik</value>
+	</data>
+	<data name="settings_off" xml:space="preserve">
+		<value>Aus</value>
+	</data>
+	<data name="settings_on" xml:space="preserve">
+		<value>Ein</value>
+	</data>
+	<data name="settings_profilename" xml:space="preserve">
+		<value>Profilname</value>
+	</data>
+	<data name="settings_sfx" xml:space="preserve">
+		<value>Soundeffekte</value>
+	</data>
+	<data name="social_score" xml:space="preserve">
+		<value>Punktestand</value>
+	</data>
+	<data name="stage" xml:space="preserve">
+		<value>Etappe</value>
+	</data>
+	<data name="statistics_correct" xml:space="preserve">
+		<value>Richtig</value>
+	</data>
+	<data name="statistics_highestearning" xml:space="preserve">
+		<value>Höchster Gewinn</value>
+	</data>
+	<data name="statistics_highestscore" xml:space="preserve">
+		<value>Höchster Punktestand</value>
+	</data>
+	<data name="statistics_losestreak" xml:space="preserve">
+		<value>Pechsträhne</value>
+	</data>
+	<data name="statistics_totalplaytime" xml:space="preserve">
+		<value>Gesamtspielzeit</value>
+	</data>
+	<data name="statistics_winstreak" xml:space="preserve">
+		<value>gewinnen Streifen</value>
+	</data>
+	<data name="statistics_wrong" xml:space="preserve">
+		<value>Falsch</value>
+	</data>
+	<data name="Supplier Management" xml:space="preserve">
+		<value>Zulieferermanagement</value>
+	</data>
+	<data name="SUV" xml:space="preserve">
+		<value>SUV</value>
+	</data>
+	<data name="taptocontinue" xml:space="preserve">
+		<value>Klicke um Fortzufahren</value>
+	</data>
+	<data name="winter" xml:space="preserve">
+		<value>Winterlandschaft</value>
+	</data>
+</root>
