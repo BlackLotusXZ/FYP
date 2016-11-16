@@ -192,6 +192,7 @@ public class SmartLocal : MonoBehaviour
     private string german;
     #endregion
     public int progress;
+    public GameObject statistics;
 	// Use this for initialization
     void Start()
     {
@@ -488,6 +489,7 @@ public class SmartLocal : MonoBehaviour
        PlayerPrefs.SetString("sentence2", sentence[1].text);
        PlayerPrefs.SetString("sentence3", sentence[2].text);
         #endregion
+       
     }
     void OnGUI()
     {
@@ -511,6 +513,7 @@ public class SmartLocal : MonoBehaviour
         LanguageManager.Instance.ChangeLanguage("en");
         langauage_num = 0;
         PlayerPrefs.SetString("language", english);
+        statistics.GetComponent<Statistics>().changeCat();
     }
     public void isGerman()
     {
@@ -518,5 +521,6 @@ public class SmartLocal : MonoBehaviour
         LanguageManager.Instance.ChangeLanguage("de-DE");
         langauage_num = 1;
         PlayerPrefs.SetString("language", german);
+        statistics.GetComponent<Statistics>().changeCat();
     }
 }

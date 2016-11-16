@@ -63,7 +63,7 @@ public class OrientationControl : MonoBehaviour {
         CanvasGroup cgroup = cc[0].GetComponent<CanvasGroup>();
         cgroup.alpha = 1.0f;
         cgroup.interactable = true;
-        
+        cgroup.blocksRaycasts = true;
         
         cgroup = cc[1].GetComponent<CanvasGroup>();
         cgroup.alpha = 0;
@@ -75,7 +75,7 @@ public class OrientationControl : MonoBehaviour {
         GameControl.handle.player.SettingsOrientation_Player = 0;
         cc[0].SetActive(true);
         cc[1].SetActive(false);
-        cgroup.blocksRaycasts = true;
+        
       
 
         yield return null;

@@ -94,7 +94,7 @@ public class Statistics : MonoBehaviour {
         changeCat();
     }
 
-    void changeCat()
+    public void changeCat()
     {
         ;
         // Correct , wrong , win streak , lose streak , highest score , hightest earning

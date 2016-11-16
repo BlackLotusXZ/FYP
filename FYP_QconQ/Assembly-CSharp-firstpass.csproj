@@ -219,7 +219,7 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="SmartLocalization_Runtime">
- <HintPath>C:/Users/140196G/Desktop/FYP/FYP_QconQ/Assets/SmartLocalization/SmartLocalization_Runtime.dll</HintPath>
+ <HintPath>C:/Users/140196G/Desktop/FYP(v2)/FYP_QconQ/Assets/SmartLocalization/SmartLocalization_Runtime.dll</HintPath>
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
