@@ -42,12 +42,12 @@ public class SmartLocalizeIngame : MonoBehaviour {
     }
     public void isEnglish()
     {
-        Debug.Log("english1111");
+      
         LanguageManager.Instance.ChangeLanguage("en");
     }
     public void isGerman()
     {
-        Debug.Log("german11111");
+
         LanguageManager.Instance.ChangeLanguage("de-DE");
     }
 }

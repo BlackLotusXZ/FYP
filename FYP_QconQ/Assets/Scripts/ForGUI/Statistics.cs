@@ -102,23 +102,23 @@ public class Statistics : MonoBehaviour {
         {         
             if (currentCat == 1)
             {
-                catName.text = localize.GetComponent<SmartLocal>().Production_Delivery.text;
+                catName.text = localize.GetComponent<SmartLocal>().Production_Delivery[0].text;
             }
             else if(currentCat == 2)
             {
-                catName.text = localize.GetComponent<SmartLocal>().Product_Production_Process_Development.text;
+                catName.text = localize.GetComponent<SmartLocal>().Product_Production_Process_Development[0].text;
             }
             else if(currentCat == 3)
             {
-                catName.text = localize.GetComponent<SmartLocal>().Management_Support_Process.text;
+                catName.text = localize.GetComponent<SmartLocal>().Management_Support_Process[0].text;
             }
             else if(currentCat == 4)
             {
-                catName.text = localize.GetComponent<SmartLocal>().Supplier_Management.text;
+                catName.text = localize.GetComponent<SmartLocal>().Supplier_Management[0].text;
             }
             else
             {
-                catName.text = localize.GetComponent<SmartLocal>().People_Organization.text;
+                catName.text = localize.GetComponent<SmartLocal>().People_Organization[0].text;
             }
             float Correct = GameControl.handle.Modes[0].Categories[currentCat].gettotalCorrect_Cat();
             float attempted = GameControl.handle.Modes[0].Categories[currentCat].gettotalAttempted_Cat();

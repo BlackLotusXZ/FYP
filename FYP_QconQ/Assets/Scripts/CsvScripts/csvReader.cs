@@ -77,6 +77,7 @@ public class csvReader
 
     public void Load(TextAsset csv)
     {
+        Debug.Log(csv);
         rowList.Clear();
         string[][] grid = CsvParser2.Parse(csv.text);
         for (int i = 1; i < grid.Length; i++)
