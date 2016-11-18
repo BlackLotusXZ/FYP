@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 using UnityEngine.UI;
 
-public class csvReader 
+public class csvReader
 {
-    public Row FetchArcadeQtns( List<int> IDs)
+    public Row FetchArcadeQtns(List<int> IDs)
     {
         if (IDs.Count > 1)
         {
@@ -17,12 +17,12 @@ public class csvReader
         {
             currentQtn = Find_ID(IDs[1].ToString());
         }
-        
+
 
         return currentQtn;
     }
 
-    public Row FetchStageQtns(int ID , string category)
+    public Row FetchStageQtns(int ID, string category)
     {
         currentQtn = FindAll_Category(category)[ID];
 
@@ -77,7 +77,6 @@ public class csvReader
 
     public void Load(TextAsset csv)
     {
-        Debug.Log(csv);
         rowList.Clear();
         string[][] grid = CsvParser2.Parse(csv.text);
         for (int i = 1; i < grid.Length; i++)

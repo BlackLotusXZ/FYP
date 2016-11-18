@@ -56,6 +56,7 @@ public class Stage
         for (int i = 0; i < MaxQtns_Stage; i++)
         {
             Questions[i] = GameControl.handle.Database.FetchStageQtns(startNo + i, categoryName);
+            //Debug.Log(GameControl.handle.Database.FetchStageQtns(startNo + i, categoryName));
         }
 
     }
@@ -80,8 +81,10 @@ public class Stage
         List<string> Data = new List<string>();
         Data.Add(Questions[currentQtn_Stage].Question);
         for (int i = 0; i < 10; i++)
+        {
             Data.Add(Questions[currentQtn_Stage].Answer[i]);
-
+            
+        }
         for (int i = 0; i < correctAns.Length; i++)
             correctAns[i] = Questions[currentQtn_Stage].CorrectAns[i];
 
@@ -97,7 +100,7 @@ public class Stage
                 qtnsOut.Add(i);
             }
         }
-
+        
         return Data; // return the list of data for 1 question
     }
 

@@ -52,19 +52,15 @@ public class GameControl : MonoBehaviour {
             handle = this;
 
             // load all the questions from csv pls
-            PlayerPrefs.SetString("language", "questions");
-                Debug.Log((PlayerPrefs.GetString("language")));
-                if (PlayerPrefs.GetString("language") == "questions")
+            if (Database.IsLoaded() == false)
+            {
+                if(PlayerPrefs.GetString("language") == "questions")
                 {
-                    Database.Load(QtnDataEN);
-                    Debug.Log("englishhhhhhh");
+                     Database.Load(QtnDataEN);
                 }
                 else
-                {
                     Database.Load(QtnDataDE);
-                    Debug.Log("germannnnnnnn");
-                }
-            
+            }
 
             Modes[(int)ModeName.Story].StoryNameInit(); // story mode init
             Modes[(int)ModeName.Arcade].ArcadeInit(); // arcade mode init
@@ -78,25 +74,7 @@ public class GameControl : MonoBehaviour {
         }
         
     }
-    public void Init()
-    {
 
-       
-        if (PlayerPrefs.GetString("language") == "questions")
-        {
-            Database.Load(QtnDataEN);
-            Debug.Log("englishhhhhhh");
-        }
-        else
-        {
-            Database.Load(QtnDataDE);
-            Debug.Log("germannnnnnnn");
-        }
-        Modes[(int)ModeName.Story].StoryNameInit(); // story mode init
-        Modes[(int)ModeName.Arcade].ArcadeInit(); // arcade mode init
-
-        LoadGame(); // load the game data from system
-    }
     public Mode getMode()
     {
         return Modes[currentMode];

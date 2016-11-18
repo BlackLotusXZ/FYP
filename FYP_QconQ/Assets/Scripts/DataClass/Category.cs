@@ -252,7 +252,7 @@ public class Category
                 highestscore_Cat = temphiggestscore;
             }
         }
-        Debug.Log("highestscoreCat" + highestscore_Cat);
+        //Debug.Log("highestscoreCat" + highestscore_Cat);
         return highestscore_Cat;
     }
     public int getwinstreak_Cat()
@@ -270,7 +270,7 @@ public class Category
                 winstreak_Cat = tempwinstreak;
             }
         }
-        Debug.Log("winstreakcat" + winstreak_Cat);
+       // Debug.Log("winstreakcat" + winstreak_Cat);
         return winstreak_Cat;
     }
     public int getlosestreak_Cat()
@@ -288,7 +288,7 @@ public class Category
                 losestreak_Cat = templosestreak;
             }
         }
-        Debug.Log("losestreakcat" + losestreak_Cat);
+       // Debug.Log("losestreakcat" + losestreak_Cat);
         return losestreak_Cat;
     }
     //public int getplayedUntil_Cat()
