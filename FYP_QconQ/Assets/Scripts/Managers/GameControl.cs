@@ -50,16 +50,20 @@ public class GameControl : MonoBehaviour {
             // do not destroy this gameObject .. throughout the whole game de
             DontDestroyOnLoad(gameObject);
             handle = this;
-
+           Debug.Log(PlayerPrefs.GetString("language"));
             // load all the questions from csv pls
             if (Database.IsLoaded() == false)
             {
-                if(PlayerPrefs.GetString("language") == "questions")
+                if (PlayerPrefs.GetString("language","questions") == "questions")
                 {
-                     Database.Load(QtnDataEN);
+                    Debug.Log("english");
+                    Database.Load(QtnDataEN);
                 }
-                else
+                else if (PlayerPrefs.GetString("language") == "questions-DE")
+                {
+                    Debug.Log("german");
                     Database.Load(QtnDataDE);
+                }
             }
 
             Modes[(int)ModeName.Story].StoryNameInit(); // story mode init
@@ -75,6 +79,27 @@ public class GameControl : MonoBehaviour {
         
     }
 
+    public void ChangeText()
+    {
+        if (PlayerPrefs.GetString("language", "questions") == "questions")
+        {
+            Debug.Log("english");
+            Database.Load(QtnDataEN);
+            Modes[(int)ModeName.Story].StoryNameInit(); // story mode init
+            Modes[(int)ModeName.Arcade].ArcadeInit(); // arcade mode init
+
+            LoadGame(); // load the game data from system
+        }
+        else if (PlayerPrefs.GetString("language") == "questions-DE")
+        {
+            Debug.Log("german");
+            Database.Load(QtnDataDE);
+            Modes[(int)ModeName.Story].StoryNameInit(); // story mode init
+            Modes[(int)ModeName.Arcade].ArcadeInit(); // arcade mode init
+
+            LoadGame(); // load the game data from system
+        }
+    }
     public Mode getMode()
     {
         return Modes[currentMode];

@@ -208,7 +208,7 @@ public class SmartLocal : MonoBehaviour
             LanguageManager languageManager = LanguageManager.Instance;
             LanguageManager.Instance.OnChangeLanguage += OnChangeLanguage;
             PlayerPrefs.SetInt("language_instance", 1);
-
+            PlayerPrefs.SetString("language", english);
             LanguageManager.Instance.ChangeLanguage("en");
            // PlayerPrefs.SetString("language", english);
           //  Debug.Log("set to english");
@@ -624,7 +624,7 @@ public class SmartLocal : MonoBehaviour
         langauage_num = 0;
         PlayerPrefs.SetString("language", english);
         statistics.GetComponent<Statistics>().changeCat();
-      
+        GameControl.handle.ChangeText();
     }
     public void isGerman()
     {
@@ -634,6 +634,6 @@ public class SmartLocal : MonoBehaviour
         langauage_num = 1;
         PlayerPrefs.SetString("language", german);
         statistics.GetComponent<Statistics>().changeCat();
-       
+        GameControl.handle.ChangeText();
     }
 }
