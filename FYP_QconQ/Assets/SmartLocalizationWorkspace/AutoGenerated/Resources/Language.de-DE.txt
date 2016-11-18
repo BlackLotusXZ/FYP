@@ -332,7 +332,7 @@ Beantworte die Frage bevor die Zeit abläuft!
 		<value>Kegel</value>
 	</data>
 	<data name="prop_electricitybox" xml:space="preserve">
-		<value />
+		<value>Electricity Box</value>
 	</data>
 	<data name="prop_fence" xml:space="preserve">
 		<value>Zaun</value>
@@ -395,10 +395,10 @@ Beantworte die Frage bevor die Zeit abläuft!
 		<value>Straßenlaterne 4</value>
 	</data>
 	<data name="prop_streetsign" xml:space="preserve">
-		<value />
+		<value>Street sign</value>
 	</data>
 	<data name="prop_telephonebooth" xml:space="preserve">
-		<value />
+		<value>Telephone Booth</value>
 	</data>
 	<data name="prop_trafficlight" xml:space="preserve">
 		<value>Ampel</value>
