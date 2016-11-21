@@ -200,54 +200,36 @@ public class SmartLocal : MonoBehaviour
         english = "questions";
         german = "questions-DE";
         Debug.Log(PlayerPrefs.GetString("language"));
-        
-        //Debug.Log((PlayerPrefs.GetInt("language_instance")));
-        if ( PlayerPrefs.GetString("language",english) == "questions" && PlayerPrefs.GetInt("language_instance",0) == 0)
+        if (!PlayerPrefs.HasKey("FirstTime"))
         {
-            Debug.Log("have instance");
+            Debug.Log("first time launch");
             LanguageManager languageManager = LanguageManager.Instance;
             LanguageManager.Instance.OnChangeLanguage += OnChangeLanguage;
             PlayerPrefs.SetInt("language_instance", 1);
             PlayerPrefs.SetString("language", english);
             LanguageManager.Instance.ChangeLanguage("en");
-           // PlayerPrefs.SetString("language", english);
-          //  Debug.Log("set to english");
-           // game.GetComponent<GameControl>().Init();
+            statistics.GetComponent<Statistics>().changeCat();
         }
-           
-        else if (PlayerPrefs.GetString("language") == "questions-DE")
-        {
-            Debug.Log("have instance german");
-            LanguageManager languageManager = LanguageManager.Instance;
-            LanguageManager.Instance.OnChangeLanguage += OnChangeLanguage;
-            PlayerPrefs.SetInt("language_instance", 1);
 
-            LanguageManager.Instance.ChangeLanguage("de-DE");
-            // PlayerPrefs.SetString("language", english);
-            //  Debug.Log("set to english");
-            // game.GetComponent<GameControl>().Init();
+        else if (PlayerPrefs.GetString("language",english) == english)
+        {
+            Debug.Log("set to english");
+            LanguageManager.Instance.OnChangeLanguage += OnChangeLanguage;
+            LanguageManager.Instance.ChangeLanguage("en");
+            PlayerPrefs.SetString("language", english);
+            statistics.GetComponent<Statistics>().changeCat();
         }
-        
-       
+        else if (PlayerPrefs.GetString("language") == german)
+        {
+            Debug.Log("set to german");
+            LanguageManager.Instance.OnChangeLanguage += OnChangeLanguage;
+            LanguageManager.Instance.ChangeLanguage("de-DE");
+            PlayerPrefs.SetString("language", german);
+            statistics.GetComponent<Statistics>().changeCat();
+        }
             langauage_num = 0;
         
     }
-    /*
-    void Awake()
-    {
-        if (PlayerPrefs.GetString("language", "nothing") == "questions")
-        {
-            Debug.Log("after english");
-            LanguageManager.Instance.ChangeLanguage("en");
-            // changelanguage();
-        }
-        else if (PlayerPrefs.GetString("language", "nothing") == "questions-DE")
-        {
-            LanguageManager.Instance.ChangeLanguage("de-DE");
-            changelanguage();
-            Debug.Log("after german");
-        } 
-    }*/
     void changelanguage()
     {
           LanguageManager.Instance.OnChangeLanguage -= OnChangeLanguage;
@@ -262,7 +244,7 @@ public class SmartLocal : MonoBehaviour
             LanguageManager.Instance.OnChangeLanguage -= OnChangeLanguage;
         }
         PlayerPrefs.SetInt("language_instance", 0);
-        PlayerPrefs.DeleteKey("language");
+        //PlayerPrefs.DeleteKey("language");
     }
 	// Update is called once per frame
     void OnChangeLanguage(LanguageManager thisLanguageManager)
